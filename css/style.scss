@@ -94,18 +94,17 @@ body  {
     margin: 0 auto;
 }
 
-.clearfix {
-    clear: both;
-}
-
 .our__services {
     max-width: 1190px;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .title__ourservicse {
     display: block;
-    padding-top: 105px;
+    padding-top: 50px;
     color: #394b50;
     font-family: "Gotham - Black";
     font-size: 30px;
@@ -122,7 +121,6 @@ body  {
 }
 
 .svg__icon {
-    float: left;
     fill: #709dca;
     width: 43px;
     height: 44px;
@@ -134,23 +132,19 @@ svg:hover {
 }
 
 .wraper__block_1 {
+    display: flex;
+    justify-content: center;
     padding-top: 79px;
-    width: 525px;
-    float: left;
-}
-
-.wraper__block_2 {
-    padding-top: 79px;
-    width: 525px;
-    float: right;
+    width: 50%;
 }
 
 .wrap__ourservicse {
-    float: left;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 .title__our_services {
-    display: block;
     padding-left: 39px;
     color: #394b50;
     font-family: Lato;
@@ -160,9 +154,7 @@ svg:hover {
 }
 
 .text__our_services {
-    display: block;
     padding: 21px 0 0 39px;
-    width: 440px;
     color: #7b7b7b;
     line-height: 22px;
     text-align: left;
@@ -189,6 +181,7 @@ svg:hover {
 }
 
 .how_it_works {
+    display: flex;
     max-width: 1190px;
     margin: 0 auto;
     svg {
@@ -221,39 +214,24 @@ svg:hover {
 }
 
 .block__step {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     margin-top: 118px;
-    width: 24%;
-    position: relative;
+    width: 15%;
     text-align: center;
 }
 
 .arrow1 {
-    top: -50px;
-    left: 215px;
-    width: 141px;
-    height: 53px;
-    background: url(../img/arrow1.png);
-    position: absolute;
+    width: 14%;
+    height: 83px;
+    margin-top: 50px;
 }
 
 .arrow2 {
-    top: 65px;
-    left: 230px;
-    width: 141px;
-    height: 53px;
-    background: url(../img/arrow1.png);
-    position: absolute;
+    margin-top: 170px;
+    width: 14%;
+    height: 83px;
     transform: rotate(180deg);
-}
-
-.arrow3 {
-    top: -50px;
-    left: 215px;
-    width: 141px;
-    height: 53px;
-    background: url(../img/arrow1.png);
-    position: absolute;
 }
 
 .title__step {
@@ -266,8 +244,7 @@ svg:hover {
 }
 
 .text__step {
-    display: inline-block;
-    width: 213px;
+    padding-top: 20px;
     color: #7b7b7b;
     font-size: 13px;
     font-weight: 400;
@@ -280,8 +257,7 @@ svg:hover {
 }
 
 .button__how_it_works {
-    width: 165px;
-    height: 46px;
+    padding: 18px 30px;
     background-color: #ffbb42;
     border: 0px;
     color: #ffffff;
@@ -292,6 +268,10 @@ svg:hover {
 
 @media screen and (max-width : 992px)  {   
 
+    body { 
+        padding: 0 15px;
+    }
+
     .our__services {
         max-width: 992px;
         margin: 0 auto;
@@ -300,19 +280,7 @@ svg:hover {
     .title__ourservicse {
         padding-top: 55px;
     }
-            
-    .wraper__block_1 {
-        width: 425px;
-    }
-    
-    .wraper__block_2 {
-        width: 425px;
-    }
-    
-    .text__our_services {
-        width: 340px;
-    }
-    
+        
     .title__how_it_works {
         padding-top: 100px;
     }
@@ -321,19 +289,7 @@ svg:hover {
         max-width: 1190px;
         margin: 0 auto;
     }
-    
-    .arrow1 {
-        left: 170px;
-    }
-    
-    .arrow2 {
-        left: 175px;
-    }
-
-    .arrow3 {
-        left: 170px;
-    }
-    
+        
     .wrap {
         margin-top: 41px;
     }
@@ -357,22 +313,12 @@ svg:hover {
         
     .wraper__block_1 {
         padding-top: 59px;
-        width: 325px;
     }
-    
-    .wraper__block_2 {
-        padding-top: 59px;
-        width: 325px;
-    }
-        
+            
     .title__our_services {
         padding-left: 39px;
     }
-    
-    .text__our_services {
-        width: 240px;
-    }
-    
+        
     .title__how_it_works {
         padding-top: 70px;
     }
@@ -407,22 +353,15 @@ svg:hover {
     }
     
     .arrow1 {
-        top: -70px;
-        left: 115px;
+        margin-top: 15px;
     }
     
     .arrow2 {
-        top: 75px;
-        left: 121px;
+        margin-top: 125px;
     }
-    
-    .arrow3 {
-        top: -70px;
-        left: 115px;
-    }
-    
+        
     .text__step {
-        width: 145px;
+        padding-top: 15px;
     }
 
     .wrap {
