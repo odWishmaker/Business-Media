@@ -92,11 +92,10 @@
 body  {
     font-family: 'OpenSans', 'Arial', 'Helvetica', 'sans-serif';
     margin: 0 auto;
+    max-width: 1190px;
 }
 
 .our__services {
-    max-width: 1190px;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -182,8 +181,7 @@ svg:hover {
 
 .how_it_works {
     display: flex;
-    max-width: 1190px;
-    margin: 0 auto;
+    padding: 0 30px;
     svg {
         margin-bottom: 102px ;
     }
@@ -271,23 +269,19 @@ svg:hover {
     body { 
         padding: 0 15px;
     }
-
-    .our__services {
-        max-width: 992px;
-        margin: 0 auto;
-    }
     
     .title__ourservicse {
         padding-top: 55px;
     }
+
+    .how_it_works {
+        svg {
+            margin-bottom: 70px ;
+        }
+    }
         
     .title__how_it_works {
         padding-top: 100px;
-    }
-
-    .how_it_works {
-        max-width: 1190px;
-        margin: 0 auto;
     }
         
     .wrap {
@@ -298,8 +292,8 @@ svg:hover {
 @media screen and (max-width : 768px)  {    
 
     .our__services {
-        max-width: 768px;
-        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
     
     .title__ourservicse {
@@ -312,20 +306,29 @@ svg:hover {
     }
         
     .wraper__block_1 {
+        width: 100%;
         padding-top: 59px;
     }
             
     .title__our_services {
         padding-left: 39px;
     }
+
+    .how_it_works {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        svg {
+            margin-bottom: 25px;
+        }
+    }
         
     .title__how_it_works {
         padding-top: 70px;
     }
     
-    .how_it_works {
-        max-width: 768px;
-        margin: 0 auto;
+    .block__step {
+        width: 60%;
     }
     
     .headphones {
@@ -353,11 +356,16 @@ svg:hover {
     }
     
     .arrow1 {
-        margin-top: 15px;
+        margin: 60px 0 0 130px;
+        transform: rotate(90deg);
+        width: 20%;
+        align-self: center;
     }
     
     .arrow2 {
-        margin-top: 125px;
+        margin: 60px 130px 0 0;
+        transform: rotate(268deg);
+        width: 20%;
     }
         
     .text__step {
@@ -368,3 +376,5 @@ svg:hover {
         margin-top: 41px;
     }
 }
+
+
